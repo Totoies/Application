@@ -1,9 +1,9 @@
-package config
+package Application
 
 import (
 	"net/http"
 
-	controllers "github.com/Totoies/Totoies/src/Application/Controllers"
+	controllers "Application/src/Controllers"
 )
 
 /*
