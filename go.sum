@@ -1,2 +1,6 @@
-github.com/Totoies/Totoies v0.0.2 h1:0uMBw/1xCdntbCK6d1jbVY3H6cb5ztX/5PXRC/Rd27k=
-github.com/Totoies/Totoies v0.0.2/go.mod h1:sny7h0qhjReJoLk56LHSpPUF6NYMSV59p3BHQwWFig0=
+github.com/Totoies/Totoies v0.0.0-20230523234031-b06bd7dbe298 h1:X2UKoRTU9XR4D1pb2yZEk+tTrh8KTPzwRVdJZlQXAsw=
+github.com/Totoies/Totoies v0.0.0-20230523234031-b06bd7dbe298/go.mod h1:sny7h0qhjReJoLk56LHSpPUF6NYMSV59p3BHQwWFig0=
+github.com/Totoies/Totoies v0.0.0-20230524004250-f6f02606afcc h1:IGFsjyyg9xVliOKAD4nClSPbagpH6jMH1Lhzj4i8huQ=
+github.com/Totoies/Totoies v0.0.0-20230524004250-f6f02606afcc/go.mod h1:sny7h0qhjReJoLk56LHSpPUF6NYMSV59p3BHQwWFig0=
+github.com/Totoies/Totoies v0.0.0-20230606125016-1775c8a58e83 h1:laLbw2u0qDFiuOmUIy9bTFzvPulhe2zsAbt4jIDQP4M=
+github.com/Totoies/Totoies v0.0.0-20230606125016-1775c8a58e83/go.mod h1:sny7h0qhjReJoLk56LHSpPUF6NYMSV59p3BHQwWFig0=

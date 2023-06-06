@@ -1,3 +1,5 @@
 @echo off
 
-go run .
+go build -o .\bin\application.exe
+
+.\bin\application.exe

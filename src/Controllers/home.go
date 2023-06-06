@@ -1,38 +1,22 @@
-package controlers
+package Controller
 
 import (
-	_ "embed"
 	"net/http"
-	"text/template"
+
+	totoies "github.com/Totoies/Totoies"
 )
 
-// Private Variables
-type home struct {
-	WelcomeTxt string
-}
-
-// Publicaly assesible variables
-var Home = home{
-	WelcomeTxt: "Wlecome All",
-}
-
-// Load our View During Building the application
-// load home.html
-//
-//go:embed ..\\Views\\home.html
-var html string
-
-var homeTemplate, err = template.New("template").Parse(html)
+var Home = totoies.CreateController(totoies.VViews{
+	"Home": "Static/Views/Home/home.html",
+})
 
 /*
-Load() - Function load our controller and other settings
+LoadHome() - Function load our controller and other settings
 */
-func (HomeController *home) Load(w http.ResponseWriter, r *http.Request) {
+func LoadHome(w http.ResponseWriter, r *http.Request) {
 
-	if err != nil {
-		// fmt.Fprintf(w, html)
-		http.Error(w, "Error rendering template", http.StatusInternalServerError)
-	} else {
-		homeTemplate.Execute(w, Home)
-	}
+	totoies.Exec(w, &Home.Templates, "Home", totoies.VData{
+		"WelcomeTxt": "Welcome All",
+		"Title":      "First Application",
+	})
 }

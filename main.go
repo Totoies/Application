@@ -1,20 +1,14 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
+	Application "Application/src"
 
 	totoies "github.com/Totoies/Totoies"
 )
 
 func main() {
 
-	totoies.App.AddRoutes(totoies.Routes{
-		"/": func(w http.ResponseWriter, r *http.Request) {
-			fmt.Fprint(w, "Hello, World!")
-		},
-	})
-
-	totoies.App.Buid()
-
+	// Configure teh Routing in src routes.go
+	totoies.InitStaticFolder(Application.StaticDir)
+	totoies.Buid()
 }
